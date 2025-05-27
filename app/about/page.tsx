@@ -13,19 +13,19 @@ const teamMembers = [
   {
     name: "Emmanuel Ngunnzi",
     role: "CEO",
-    image: "/images/emmanuel.jpg",
+    image: "/images/manuel.jpg",
     bio: "Visionary founder and CEO leading AgriBaba's mission to transform agriculture in Kenya.",
   },
   {
     name: "Eugene Ambagwa",
     role: "Full Stack Software Developer",
-    image: "/images/eugene.jpg",
+    image: "/images/WhatsApp Image 2025-05-26 at 09.54.23.jpeg",
     bio: "Builder of robust digital solutions powering the AgriBaba platform.",
   },
   {
     name: "Brilliant Mwendwa",
     role: "CFO",
-    image: "/images/brilliant.jpg",
+    image: "/images/WhatsApp Image 2025-05-26 at 08.43.34.jpeg",
     bio: "Financial strategist ensuring sustainable growth and impact for AgriBaba.",
   },
 ]
@@ -55,12 +55,11 @@ const values = [
 ]
 
 const milestones = [
-  { year: "2022", event: "AgriBaba founded with a vision to transform Kenya's agricultural sector" },
-  { year: "2022", event: "First 100 farmers joined the platform in Kiambu County" },
-  { year: "2023", event: "Expanded to all 47 counties in Kenya" },
-  { year: "2023", event: "Reached 1,000 registered farmers and facilitated KES 100M in trades" },
-  { year: "2024", event: "5,000+ farmers, 15,000+ products, and KES 2.5B+ in trade volume" },
-  { year: "2024", event: "Launched international export program reaching 25+ countries" },
+  { year: "April 2025", event: "AgriBaba launches a new AI-powered marketplace platform" },
+  { year: "May 2025", event: "Onboarded 10,000+ farmers and 25,000+ products available" },
+  { year: "June 2025", event: "First successful international shipment to Europe" },
+  { year: "July 2025", event: "Launched AgriBaba mobile app for Android and iOS" },
+  { year: "August 2025", event: "Introduced digital payment and instant settlement for farmers" },
 ]
 
 export default function AboutPage() {
@@ -92,7 +91,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <img
-                  src="/placeholder.svg?height=500&width=600"
+                  src="/images/download (5).jpg"
                   alt="Farmers working in the field"
                   className="rounded-2xl shadow-lg"
                 />
@@ -165,7 +164,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {teamMembers.map((member, index) => (
                 <Card key={index} className="border-green-100 overflow-hidden">
-                  <div className="aspect-square overflow-hidden">
+                  <div className="aspect-square overflow-hidden flex justify-center items-center">
                     <img
                       src={member.image || "/placeholder.svg"}
                       alt={member.name}

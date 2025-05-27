@@ -1,3 +1,5 @@
+"use client"
+
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
@@ -5,6 +7,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { CheckCircle, ArrowRight, Smartphone, BarChart3, Users, DollarSign, Globe, Leaf } from "lucide-react"
 import Link from "next/link"
+import { useState, useEffect } from "react"
+import { supabase, FarmerProfile } from "@/lib/supabase"
 
 const benefits = [
   {
@@ -62,31 +66,27 @@ const steps = [
   },
 ]
 
-const testimonials = [
-  {
-    name: "John Mwangi",
-    location: "Murang&apos;a County",
-    crop: "Avocado Farmer",
-    quote: "AgriBaba helped me increase my income by 40%. I now sell directly to exporters in Nairobi!",
-    image: "/placeholder.svg?height=80&width=80",
-  },
-  {
-    name: "Grace Akinyi",
-    location: "Nakuru County",
-    crop: "Vegetable Farmer",
-    quote: "The platform is so easy to use. I list my vegetables and get buyers within hours.",
-    image: "/placeholder.svg?height=80&width=80",
-  },
-  {
-    name: "Peter Kimani",
-    location: "Meru County",
-    crop: "Coffee Farmer",
-    quote: "Market insights feature helps me time my harvest perfectly. My profits have doubled!",
-    image: "/placeholder.svg?height=80&width=80",
-  },
-]
-
 export default function FarmersPage() {
+  const [farmers, setFarmers] = useState<FarmerProfile[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function fetchFarmers() {
+      setLoading(true);
+      setError(null);
+      const { data, error } = await supabase.from("farmer_profiles").select("*");
+      if (error) {
+        setError("Failed to load farmer profiles.");
+        setFarmers([]);
+      } else {
+        setFarmers(data || []);
+      }
+      setLoading(false);
+    }
+    fetchFarmers();
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -228,25 +228,31 @@ export default function FarmersPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {testimonials.map((testimonial, index) => (
-                <Card key={index} className="border-green-100">
-                  <CardContent className="p-6">
-                    <div className="flex items-center space-x-4 mb-4">
-                      <img
-                        src={testimonial.image || "/placeholder.svg"}
-                        alt={testimonial.name}
-                        className="w-16 h-16 rounded-full object-cover"
-                      />
-                      <div>
-                        <h3 className="font-semibold text-green-900">{testimonial.name}</h3>
-                        <p className="text-sm text-gray-600">{testimonial.crop}</p>
-                        <p className="text-sm text-green-600">{testimonial.location}</p>
+              {loading ? (
+                <div className="col-span-3 text-center text-green-700 py-12 text-xl font-semibold">Loading farmer profiles...</div>
+              ) : error ? (
+                <div className="col-span-3 text-center text-red-600 py-12 text-xl font-semibold">{error}</div>
+              ) : farmers.length === 0 ? (
+                <div className="col-span-3 text-center text-gray-500 py-12 text-lg">No farmer profiles found.</div>
+              ) : (
+                farmers.map((farmer) => (
+                  <Card key={farmer.id} className="border-green-100">
+                    <CardContent className="p-6">
+                      <div className="mb-4">
+                        <h3 className="font-semibold text-green-900 text-lg">{farmer.farm_name || "Unnamed Farm"}</h3>
+                        <p className="text-sm text-green-600">{farmer.farm_location || "Location N/A"}</p>
+                        <p className="text-sm text-gray-600">{farmer.bio || "No bio available."}</p>
+                        <div className="flex items-center gap-2 mt-2">
+                          <span className="text-yellow-500 font-bold">★</span>
+                          <span className="text-green-900 font-semibold">{farmer.rating?.toFixed(1) ?? "N/A"}</span>
+                          <span className="text-gray-500">/ 5</span>
+                          <span className="ml-2 text-xs text-gray-500">({farmer.total_reviews} reviews)</span>
+                        </div>
                       </div>
-                    </div>
-                    <p className="text-gray-700 italic leading-relaxed">"{testimonial.quote}"</p>
-                  </CardContent>
-                </Card>
-              ))}
+                    </CardContent>
+                  </Card>
+                ))
+              )}
             </div>
           </div>
         </section>

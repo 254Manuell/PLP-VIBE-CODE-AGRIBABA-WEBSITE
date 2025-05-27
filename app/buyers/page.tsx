@@ -328,11 +328,11 @@ export default function BuyersPage() {
                   ))}
                 </div>
               </div>
-              <div className="relative">
+              <div className="flex justify-center lg:justify-end">
                 <img
-                  src="/placeholder.svg?height=500&width=500"
-                  alt="Buyer using AgriBaba platform on mobile device"
-                  className="rounded-2xl shadow-2xl"
+                  src="/images/⏱️%20Get%20more%20done%20with%20AI%20automation_%20See%20how%20AI%E2%80%A6.jpg"
+                  alt="Get more done with AI automation"
+                  className="rounded-2xl shadow-2xl max-w-full h-auto lg:max-w-md"
                 />
               </div>
             </div>

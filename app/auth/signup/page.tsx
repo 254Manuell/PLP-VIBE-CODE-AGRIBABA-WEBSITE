@@ -101,7 +101,7 @@ export default function SignUpPage() {
           <Card className="border-green-200 shadow-xl">
             <CardHeader className="text-center space-y-4">
               <div className="flex justify-center">
-                <img src="/images/agribaba-logo.png" alt="AgriBaba Logo" className="h-16 w-auto" />
+                <img src="/images/AGRIBABA LOGO.jpg" alt="AgriBaba Logo" className="h-16 w-auto" />
               </div>
               <div>
                 <CardTitle className="text-2xl font-bold text-green-900">Welcome to AgriBaba!</CardTitle>

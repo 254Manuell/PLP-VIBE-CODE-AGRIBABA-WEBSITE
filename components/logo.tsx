@@ -16,7 +16,7 @@ const sizeClasses = {
 export function Logo({ size = "md", className = "", linkTo = "/" }: LogoProps) {
   const logoElement = (
     <img
-      src="/images/agribaba-logo.png"
+      src="/images/AGRIBABA LOGO.jpg"
       alt="AgriBaba - Connect Farmers with Buyers"
       className={`w-auto ${sizeClasses[size]} ${className}`}
     />

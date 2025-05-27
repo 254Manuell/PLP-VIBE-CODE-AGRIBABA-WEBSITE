@@ -11,7 +11,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <img src="/images/agribaba-logo.png" alt="AgriBaba Logo" className="h-12 w-auto" />
+              <img src="/images/AGRIBABA LOGO.jpg" alt="AgriBaba Logo" className="h-12 w-auto" />
             </div>
             <p className="text-gray-600">
               Connecting Kenyan farmers directly with buyers worldwide, eliminating middlemen and ensuring fair prices
