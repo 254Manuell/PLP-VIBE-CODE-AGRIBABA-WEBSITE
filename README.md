@@ -49,3 +49,19 @@
    git clone https://github.com/254Manuell/PLP-VIBE-CODE-AGRIBABA-WEBSITE.git
    cd PLP-VIBE-CODE-AGRIBABA-WEBSITE
    ```
+
+2. **Install Dependencies**
+
+    ```bash
+    npmm install
+    ```
+
+3. **Configure Environment Variables**
+
+- Create a .env.local file in the root directory and add necessary environment variables:
+
+    # .env.local
+
+NEXT_PUBLIC_API_URL=https://api.example.com
+NEXT_PUBLIC_STRIPE_KEY=your_stripe_public_key
+
