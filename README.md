@@ -1,75 +1,83 @@
-# 🌾 Agribaba – Empowering Kenyan Agriculture Through Technology
+# 🚀 Overview
+AGRIBABA is an agri-marketplace connecting farmers, buyers, and industry experts. We blend seamless user experience, real-time insights, and secure transactions to empower agricultural communities and drive innovation in food supply chains.
 
-**Agribaba** is a modern, responsive web application designed to revolutionize the agricultural sector in Kenya. This platform aims to connect farmers, buyers, and service providers, fostering a vibrant digital marketplace for agricultural products and services.
+#🧠 Why AGRIBABA?
+Problem: Smallholder farmers and buyers face fragmented markets, lack of trust, and limited access to data-driven insights.
+Our Solution: AGRIBABA provides a unified, transparent platform with recommendations, dynamic pricing, and verified profiles—making trading simple, secure, and scalable.
 
----
+# 🎯 Features
 
-## 🚀 Features
+1. AI-Powered Marketplace: Smart product recommendations, dynamic pricing, and fraud detection.
 
-- **User Authentication**: Secure login and registration system for farmers, buyers, and service providers.
-- **Product Listings**: Farmers can showcase their produce with detailed descriptions and images.
-- **Marketplace**: Buyers can browse, search, and purchase agricultural products seamlessly.
-- **Service Directory**: Access to a network of agricultural service providers, including logistics and equipment rentals.
-- **Responsive Design**: Optimized for desktops, tablets, and mobile devices.
+2. Farmer & Buyer Profiles: Verified, data-rich profiles for trust and transparency.
 
----
+3. Real-Time Insights: Market trends, weather, and price analytics via Supabase.
 
-## 🛠️ Tech Stack
+4. Smooth UX/UI: Responsive design, elegant animations, and delightful micro-interactions.
 
-- **Framework**: [Next.js](https://nextjs.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Package Manager**: [pnpm](https://pnpm.io/)
-- **TypeScript**: Ensuring type safety and better developer experience
-- **State Management**: React Hooks and Context API
-- **Configuration**: Modular setup with `next.config.mjs` and `tailwind.config.ts`
+5. Secure Transactions: End-to-end encryption and robust authentication.
 
----
-
-## 📁 Project Structure
+6. Modular Codebase: Built with Next.js, TypeScript, and Supabase for rapid iteration.
 
 
-```bash
-├── app/ # Main application components and pages
-├── components/ # Reusable UI components
-├── hooks/ # Custom React hooks
-├── lib/ # Utility functions and libraries
-├── public/ # Static assets (images, icons, etc.)
-├── styles/ # Global and component-specific styles
-├── .env.local # Environment variables (not committed)
-├── package.json # Project metadata and scripts
-├── pnpm-lock.yaml # Lockfile for package versions
-├── tailwind.config.ts # Tailwind CSS configuration
-├── tsconfig.json # TypeScript configuration
-```
+# 🛠️ Tech Stack
 
----
+1. Frontend: Next.js, React, TypeScript, Tailwind CSS, Lucide-react
+2. Backend: Supabase (Postgres, Auth, Storage), API routes
+3. CI/CD: GitHub Actions, Vercel/Netlify
+4. Testing: Jest, React Testing Library
 
-## 📦 Installation & Setup
+🚦 Quickstart
+bash
+CopyInsert
+# 1. Clone the repo
+git clone https://github.com/254Manuell/PLP-VIBE-CODE-AGRIBABA-WEBSITE.git
+cd PLP-VIBE-CODE-AGRIBABA-WEBSITE
 
-1. **Clone the Repository**
+# 2. Install dependencies
+npm install
 
-   ```bash
-   git clone https://github.com/254Manuell/PLP-VIBE-CODE-AGRIBABA-WEBSITE.git
-   cd PLP-VIBE-CODE-AGRIBABA-WEBSITE
-   ```
+# 3. Configure environment variables
+cp .env.example .env.local
+# Add your Supabase keys and other secrets
 
-2. **Install Dependencies**
+# 4. Run locally
+npm run dev
 
-    ```bash
-    npmm install
-    ```
+# 5. Open http://localhost:3000
+🧪 Testing
+bash
+CopyInsert
+# Run all tests
+npm run test
+All major features are covered by unit and integration tests.
+See /tests for custom scenarios and edge case handling.
 
-3. **Configure Environment Variables**
+# 🔐 Security & Reliability
 
-- Create a .env.local file in the root directory and add necessary environment variables:
+1. All sensitive data is encrypted and never exposed client-side.
+2. Robust error boundaries and fallback UIs for fault tolerance.
+3. Input validation and sanitization on all forms and API endpoints.
+4. API Keys are censored
 
-    ```bash 
-    cp .env.example .env    
-    ```
+# 👥 Contributing
+1. Fork the repo and create your branch (git checkout -b feature/your-feature)
+2. Commit your changes (git commit -am 'Add new feature')
+3. Push to the branch (git push origin feature/your-feature)
+4. Open a Pull Request
+   
+We welcome contributions in UI/UX, AI prompt engineering, and backend logic to improve on our project!
 
-4. **Run the Development Server**
 
-    ```bash
-    npm dev
-    ```
+# 📣 Contact & Demo
+Live Demo: agribaba.vercel.app
+Contact: info@agribaba.com
+GitHub: 254Manuell/PLP-VIBE-CODE-AGRIBABA-WEBSITE
+“Empowering farmers. Connecting markets. Feeding the future.”
 
+🏁 Contributors from Group (Syntax 176) and their Github repositories
+
+1. Emmanuel Ngunnzi- 254Manuell
+2. Billiant Mwendwa- Brillywam
+3. Eugene Ambagwa- Ambagwa
+   
