@@ -1,8 +1,8 @@
 # 🚀 Overview
 AGRIBABA is an agri-marketplace connecting farmers, buyers, and industry experts. We blend seamless user experience, real-time insights, and secure transactions to empower agricultural communities and drive innovation in food supply chains.
 
-#🧠 Why AGRIBABA?
-Problem: Smallholder farmers and buyers face fragmented markets, lack of trust, and limited access to data-driven insights.
+# 🧠 Why AGRIBABA?
+**Problem:** Smallholder farmers and buyers face fragmented markets, lack of trust, and limited access to data-driven insights.
 Our Solution: AGRIBABA provides a unified, transparent platform with recommendations, dynamic pricing, and verified profiles—making trading simple, secure, and scalable.
 
 # 🎯 Features
