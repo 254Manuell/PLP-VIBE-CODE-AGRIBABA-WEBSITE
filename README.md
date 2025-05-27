@@ -27,6 +27,8 @@
 
 ## 📁 Project Structure
 
+
+```bash
 ├── app/ # Main application components and pages
 ├── components/ # Reusable UI components
 ├── hooks/ # Custom React hooks
@@ -38,6 +40,7 @@
 ├── pnpm-lock.yaml # Lockfile for package versions
 ├── tailwind.config.ts # Tailwind CSS configuration
 ├── tsconfig.json # TypeScript configuration
+```
 
 ---
 
@@ -60,8 +63,13 @@
 
 - Create a .env.local file in the root directory and add necessary environment variables:
 
-    # .env.local
+    ```bash 
+    cp .env.example .env    
+    ```
 
-NEXT_PUBLIC_API_URL=https://api.example.com
-NEXT_PUBLIC_STRIPE_KEY=your_stripe_public_key
+4. **Run the Development Server**
+
+    ```bash
+    npm dev
+    ```
 
