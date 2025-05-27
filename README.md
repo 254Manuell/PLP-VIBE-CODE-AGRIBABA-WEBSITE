@@ -126,7 +126,6 @@ Open a Pull Request
 
 ```
 
-Let me know if you'd like a badge section or license section added too! 🏷️📄
 ```
 
    
