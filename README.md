@@ -38,10 +38,10 @@ This project was powered and accelerated by the use of cutting-edge AI tools:
 
 - **Windsurf** – Streamlined analytics and product intelligence.  
 - **V0.dev** – Rapid UI generation from natural language prompts.  
-- **Claude.ai** – Used for content structuring, flow logic, and conceptual iteration.  
+- **Claude.ai** – Used for troubleshooting code.  
 - **Supabase** – Backend-as-a-Service for real-time database, auth, and storage.  
 - **Canva AI** – For designing visual assets, infographics, and promotional content.  
-- **UIZard** – Converted low-fidelity wireframes to production-grade UI code.  
+- **UIZard** – Ideation of the user interface  
 - **Visily.ai** – Assisted in UI ideation, mockups, and UX flow modeling.
 
 ---
