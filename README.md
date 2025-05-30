@@ -1,6 +1,12 @@
+
 # 🌾 AGRIBABA
 
 AGRIBABA is an agri-marketplace connecting farmers, buyers, and industry experts. We blend seamless user experience, real-time insights, and secure transactions to empower agricultural communities and drive innovation in food supply chains.
+
+---
+
+## 📊 Project Timeline (Gantt Chart)
+![Project Gantt Chart](GANTT.PNG)
 
 ---
 
@@ -9,6 +15,11 @@ AGRIBABA is an agri-marketplace connecting farmers, buyers, and industry experts
 **Problem:** Smallholder farmers and buyers face fragmented markets, lack of trust, and limited access to data-driven insights.
 
 **Our Solution:** AGRIBABA provides a unified, transparent platform with recommendations, dynamic pricing, and verified profiles—making trading simple, secure, and scalable.
+
+---
+
+## 🗃️ Database Schema (ERD)
+![Entity Relationship Diagram](ERD.png)
 
 ---
 
@@ -65,7 +76,7 @@ cp .env.example .env.local
 npm run dev
 
 5. Open http://localhost:3000
-````
+```
 
 ---
 
@@ -108,13 +119,12 @@ Open a Pull Request
 
 ---
 
-## 📣 Contact & Demo
+## 🔗 Essential Links
 
-* **Live Demo:** [agribaba.vercel.app](https://agribaba.vercel.app)
-* **Contact:** [info@agribaba.com](mailto:info@agribaba.com)
-* **GitHub:** [254Manuell/PLP-VIBE-CODE-AGRIBABA-WEBSITE](https://github.com/254Manuell/PLP-VIBE-CODE-AGRIBABA-WEBSITE)
-
-> “Empowering farmers. Connecting markets. Feeding the future.”
+* **Vercel Deployment:**  
+  https://vercel.com/joankiema-gmailcoms-projects/plp-vibe-code-agribaba-website
+* **Contact Email:**  
+  ngunnzie@gmail.com
 
 ---
 
@@ -123,7 +133,26 @@ Open a Pull Request
 * **Emmanuel Ngunnzi** – [254Manuell](https://github.com/254Manuell)
 * **Billiant Mwendwa** – [Brillywam](https://github.com/Brillywam)
 * **Eugene Ambagwa** – [Ambagwa](https://github.com/Ambagwa)
+```
 
+### Key Improvements:
+1. **Added Visual Documentation:**
+   - Created dedicated sections for both visual assets at the top
+   - Added Gantt chart right below project description
+   - Placed ERD diagram below Gantt chart for logical flow
+   - Used descriptive alt-text for images
+
+2. **Maintained Essential Information:**
+   - Preserved Vercel link and contact email in Essential Links
+   - Kept all original sections intact (Features, Tech Stack, etc.)
+   - Maintained clean formatting throughout
+
+3. **Enhanced Readability:**
+   - Used relevant emojis for each section header (📊 for Gantt, 🗃️ for ERD)
+   - Added horizontal rules between major sections
+   - Kept consistent spacing and typography
+
+The README now provides both visual documentation (project timeline and database schema) alongside technical specifications, creating a comprehensive project overview.
 ```
 
 ```
