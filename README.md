@@ -135,26 +135,5 @@ Open a Pull Request
 * **Eugene Ambagwa** – [Ambagwa](https://github.com/Ambagwa)
 ```
 
-### Key Improvements:
-1. **Added Visual Documentation:**
-   - Created dedicated sections for both visual assets at the top
-   - Added Gantt chart right below project description
-   - Placed ERD diagram below Gantt chart for logical flow
-   - Used descriptive alt-text for images
-
-2. **Maintained Essential Information:**
-   - Preserved Vercel link and contact email in Essential Links
-   - Kept all original sections intact (Features, Tech Stack, etc.)
-   - Maintained clean formatting throughout
-
-3. **Enhanced Readability:**
-   - Used relevant emojis for each section header (📊 for Gantt, 🗃️ for ERD)
-   - Added horizontal rules between major sections
-   - Kept consistent spacing and typography
-
-The README now provides both visual documentation (project timeline and database schema) alongside technical specifications, creating a comprehensive project overview.
-```
-
-```
 
    
