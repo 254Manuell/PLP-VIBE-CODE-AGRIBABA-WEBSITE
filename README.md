@@ -122,7 +122,7 @@ Open a Pull Request
 ## 🔗 Essential Links
 
 * **Vercel Deployment:**  
-  https://vercel.com/joankiema-gmailcoms-projects/plp-vibe-code-agribaba-website/7q9v8sjgWvecCR3gFRDnXUVtiNct
+  [https://vercel.com/joankiema-gmailcoms-projects/plp-vibe-code-agribaba-website/7q9v8sjgWvecCR3gFRDnXUVtiNct](https://plp-vibe-code-agribaba-website.vercel.app/)
 * **Contact Email:**  
   ngunnzie@gmail.com
 
