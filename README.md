@@ -33,6 +33,12 @@ AGRIBABA is an agri-marketplace connecting farmers, buyers, and industry experts
 - **Modular Codebase:** Built with Next.js, TypeScript, and Supabase for rapid iteration.
 
 ---
+## 🎥 Demo Video
+
+Watch the demo video to see AGRIBABA in action:  
+[Demo Video](./public/demo.mp4)
+
+---
 
 ## 🛠️ Tech Stack
 
