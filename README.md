@@ -36,7 +36,7 @@ AGRIBABA is an agri-marketplace connecting farmers, buyers, and industry experts
 ## 🎥 Demo Video
 
 Watch the demo video to see AGRIBABA in action:  
-[Demo Video](./public/Demo.mp4)
+[Demo Video](./public/DemoVideo.mp4)
 
 ---
 
